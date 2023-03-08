@@ -1,0 +1,506 @@
+
+/* ----------------------------- CSS RESET ---------------------------- */
+* {
+    margin: 0;
+  }
+
+  html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+  font-family: 'Source Code Pro', monospace;
+  background-color: #d5d5d59c;
+}
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* -------------------------------------------------------- */
+
+  /* ----- NAVBAR ---- */
+  .header-wrapper {
+      display: flex;
+      border-bottom: 1px solid black;
+      padding: 6px;
+      justify-content: space-between;
+      background-color: #2a2929bf;
+    }
+  
+  .header-wrapper > h1 {
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+    }
+    
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      margin-left: 60px;
+    }
+    
+    .nav-logo > img {
+      width: 55px;
+      height: 55px;
+    }
+
+    .btn-nav {
+      padding: 10px;
+      display: flex;
+      margin-right: 40px;
+    }
+    
+    .btn-nav > button:hover {
+        background-color: #000000e8;
+      color: white;
+      }
+    
+    .btn-nav > button {
+      background-color: #d9c90fcc; /* Green */
+      border: 1px solid black;
+      color: black;
+      padding: 12px 25px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s background-color ease-out;
+      border-radius: 3px;
+      font-family: 'Shantell Sans', cursive;
+    }
+  /* -------------------------------------- */
+  
+  /* ------ TEXT JUDUL ----- */
+  .judul {
+    display: flex;
+    margin-top: 40px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 9em;
+  }
+  
+  .judul > h1 {
+    text-decoration: none;
+    font-size: 60px;
+  }
+  
+  .judul > h6 {
+    color: grey;
+    font-size: 18px;
+  }
+  /* --------------------------------- */
+
+  /* ------ SLIDESHOW ------- */
+
+  .slide {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  }
+
+  /* ------- TITLE SLIDESHOW ----- */
+
+  .title-image {
+    margin: 0;
+    margin-left: 30px;
+  }
+  
+  .title-image > p {
+    font-size: 23px;
+    color: grey;
+    font-style: italic;
+    margin: 76px;
+    width: 50%;
+  }
+
+  /* ------------------------------------- */
+
+/* ----- PROFIL ----- */
+
+.image {
+  display: flex;
+  align-items: center;
+  margin-left: 76px;
+}
+
+.image > img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  box-sizing: border-box;
+}
+
+.profil > h1 {
+  font-size: 22px;
+  margin-left: 15px
+}
+
+.profil > p {
+  margin-left: 15px;
+  color: grey;
+}
+
+
+/* ------------------------ */
+
+  /* -----  MAIN CONTAINER ----- */
+  
+  .main-container {
+      display: flex;
+    margin: 40px;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  
+  .main-container > img {
+    max-width: 50%;
+      /* heigth: auto; */
+  }
+  
+  /* ----- FORM MESSAGE US ----- */
+  
+  .form {
+    margin: 5%;
+    margin-top: 30px;
+  }
+  
+  .form > h1 {
+    margin-bottom: 13px;
+      font-size: 37px;
+  }
+  
+  .form > p {
+    margin-bottom: 158px;
+      color: grey;
+      font-size: 17px;
+  }
+  
+  .container {
+    border-radius: 5px;
+    background-color: #dfd7d7;
+    padding: 20px 20px 10%;
+    width: 25%;
+    height: 650px;
+  }
+  
+  input[type=text], select, textarea {
+    width: 100%; 
+    padding: 20px;  
+    border: 3px solid #bbb4b4c7; 
+    border-radius: 4px; 
+    box-sizing: border-box;
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical;
+  }
+  
+  .button button{
+      width: 100%;
+      padding: 20px;
+      font-size: 20px;
+      color: #fff;
+      background-color: #091c40;
+      border: none;
+      outline: none;
+      border-radius: 5px;
+      cursor: pointer;
+  }
+
+  .button button:hover {
+    background-color: green;
+  }
+  .message{
+      width: 100%;
+      position: relative;
+      margin-bottom: 60px;
+      display: flex;
+      justify-content: center;
+  }
+  .message .success{
+      font-size: 20px;
+      color: green;
+      position: absolute;
+      animation: buttons .3s linear;
+      display: none;
+      margin-top: 20px;
+  }
+  .message .danger{
+      font-size: 20px;
+      color: red;
+      position: absolute;
+      transition: .3s;
+      animation: buttons .3s linear;
+      display: none;
+      margin-top: 20px;
+  }
+  @keyframes buttons{
+      0%{
+          transform: scale(0.1);
+      }
+      50%{
+          transform: scale(0.5);
+      }
+      100%{
+          transform: scale(1);
+      }
+  }
+
+    /* ----- FORM MESSAGE US ----- */
+
+     /* ----- BORDER ---- */
+  .border {
+    height: 1px;
+    background-color: black;
+    background-image: linear-gradient(to right, black, black, black);
+}
+/* ----- BORDER ---- */
+
+      /* ------ HEADER ------ */
+   /* JUDUL */
+   header {
+    padding: 0 5rem; /* jarak kiri kanan */
+    margin-bottom: 3rem;
+  }
+  header h1 {
+    margin: 3rem 0 0 0; /* jarak bagian atas */
+    line-height: 2rem; /* jarak antara h1 dan p */
+    font-size: 38px; /* ukuran font */
+  }
+/* END JUDUL */
+/* ------ END HEADER ------ */
+
+    /* ----------- ABOUT ---------- */
+
+    .info {
+      width: 33%;
+      margin: 50px;
+    }
+    
+    .info > h6 {
+      font-size: 25px;
+      margin-left: 43px;
+      width: 120%;
+    }
+    
+    .feature {
+      margin: 50px;
+      margin-left: 70px;
+    }
+    
+    .flex-text {
+      display: flex;
+      align-items: center;
+      margin: 14px;
+    }
+    
+    .circle {
+      border-radius: 50%;
+      width: 34px;
+      height: 34px;
+      padding: 10px;
+      background: #b5b5b5;
+      border: 3px solid #bbbbbbc9;
+      color: #5a5a5a;
+      text-align: center;
+      font: 32px Arial, sans-serif;
+    }
+    
+    .profil2 > p {
+      margin-left: 23px;
+      color: grey;
+      width: 70%;
+      font-size: 19px;
+    }
+
+    /* ---------------------------- */
+    /* ----- MESSAGE US FORM----- */
+   .form-section {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-left: 30%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 30px;
+  }
+  
+  /* Styling for form labels */
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  /* Styling for form input fields */
+  input[type="text"],
+  input[type="date"],
+  textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: 1px black;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: black;
+  }
+  
+  /* Styling for radio buttons */
+  input[type="radio"] {
+    display: none;
+  }
+  
+  .radio-buttons label {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f7f7f7;
+    color: #555;
+    cursor: pointer;
+  }
+  
+  input[type="radio"]:checked + label {
+    background-color: #829f45;
+    color: #fff;
+  }
+  
+  /* Styling for form submit button */
+  input[type="submit"] {
+    background-color: #000000;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    width: 100%;
+  }
+  
+  /* Hover effect for form submit button */
+  input[type="submit"]:hover {
+    background-color: green;
+  }
+  
+  .form-output {
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 95%;
+    margin-top: 20px;
+    background-color: #f7f7f7;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-right: 20%;
+  }
+  .form-output p {
+    margin: 10px 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+  }
+  .form-output span {
+    font-size: 16px;
+    font-weight: normal;
+    color: black;
+  }
+
+/* ----- END MESSAGE US FORM----- */
+
+ /* ----- FOOTER ---- */
+  
+ footer {
+  border: 1px solid black;
+  text-align: end;
+  padding: 20px;
+}
+
+/* ----- END FOOTER ---- */
+
+/* --------- RESPONSIVE MEDIA SCREEN --------- */
+
+  
+@media only screen and (max-width: 800px) {
+  .judul > h1 {
+    font-size: 35px;
+  }
+
+  .slide {
+    width: 90%;
+  }
+
+  .image {
+    margin-left: 138px;
+  }
+
+  .title-image {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  .title-image > p {
+    width: 80%;
+    margin-left: 92px;
+  }
+
+  .main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .container {
+    width: 50%;
+  }
+  .info > h6 {
+    width: 245%;
+  }
+  .feature {
+    width: 100%;
+    margin: 70px;
+  }
+  .form-section {
+    margin: 0;
+    margin-left: 70px;
+    margin-bottom: 52px;
+  }
+}
