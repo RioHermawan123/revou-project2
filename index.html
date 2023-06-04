@@ -1,103 +1,162 @@
-<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Simple Project</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="./style/style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css2?family=Shantell+Sans:ital@1&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital@1&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="./style/style.css">
   </head>
+<!--     ----- NAVBAR ------ -->
+    <nav class="header-wrapper">
+      <div class="nav-logo">
+        <img clas="nav-logo" src="./asset/logorevou.png">
+      </div>
+      <div class="btn-nav">
+        <button>Home</button>
+        <button>Our Package</button>
+        <button>Call Us</button>
+      </div>
+<!--       ----- END NAVBAR ----- -->
+    </nav>
+    <!--   ---- BODY ---- -->
   <body>
-    <nav class="navbar">
-      <div class="navbar-container container">
-          <input type="checkbox" name="" id="">
-          <div class="hamburger-lines">
-              <span class="line line1"></span>
-              <span class="line line2"></span>
-              <span class="line line3"></span>
-          </div>
-          <ul class="menu-items">
-              <li><a href="#">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#">Gallery</a></li>
-          </ul>
-          <!-- ----------- POPUP ---------- -->
-          <h1 class="logo" id="welcomeMessage"></h1>
-      </div>
-
-      <div class="overlay" id="welcomeOverlay">
-        <div class="popup">
-            <h1>Welcome!</h1>
-            <p>Please Insert Your Name:</p>
-            <input type="text" id="nameInput">
-            <button onclick="submitName()">submit</button>
-        </div>
-      </div>
-
-      <!-- ------------------------ -->
-  </nav>
-<!-- -------------------------- -->
-    <main>
-      <div class="main-menu">
-      <div class="quotes">
-      <h1 class="quotes-h1">LET`S GET STARTED, AND SHAPE THE FUTURE WITH CODE!</h1>
-      </div>
-      <div class="coding">
-        <img class="content-img" src="./assets/a.jpg" alt="Coding">
-      </div>
-      <div class="arrowslide">
-        <button class="prev-btn">&lt;</button>
-        <button class="next-btn">&gt;</button>
-      </div>
-<!-- -------- MAIN ---------- -->
+<!--     --- HEADER ---- -->
+    <header class="judul">
+        <h1>Your Trusted Travel Agent`s</h1>
+      <h6> Your Happiness is Our Happiness</h6>
+      </header>
+<!-- --- HEADER  ---- -->
+<!-- ------- SLIDESHOW IMAGE -------- -->
+         <div class="main-container">
+      <div class="slide">
+        <img
+          class="img-slideshow"
+          src="./asset/t1.jpg"
+        />
+        <img
+          class="img-slideshow"
+          src="./asset/t2.jpg"
+        />
+        <img
+          class="img-slideshow"
+          src="./asset/t3.jpeg"
+        />
+<!-- ------------ SLIDESHOW IMAGE ------------ -->
+        <div class="title-image">
+          <p>"Liburan menyenangkan bersama Travel Agentku"</p>
+        <div class="image">
+          <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" alt="profil">
+    <div class="profil">
+      <h1> Florence Huges </h1>
+          <p>Ibu Rumah tangga, 28</p>
     </div>
-    <div class="explore">
-    <button class="button-84" role="button"><a href="./menu.html">Let`s Explore</a></button>
+        </div>
+        </div>
+        </div>
+    <div class="container">
+        <div class="form">
+            <h1>Contact Us</h1>
+		<p>Sales akan menghubungi anda 1x24 Jam setelah data kami terima</p>
+          <div class="form-container">
+          	<label for="email">Your Name</label>
+            <div class="name">
+                <input type="text" placeholder="Name" id="name">
+            </div>
+          		<label for="email">Your Email</label>
+            <div class="email">
+                <input type="text" placeholder="Email" id="email">
+            </div>
+          <label for="country">What Are You Interested In</label>
+            <div class="message-box">
+                <select id="msg" name="msg">
+			<option value="" disabled selected>Select your option</option>
+			<option value="tp">Travel Pesawat</option>
+      			<option value="tk">Travel Kereta</option>
+      			<option value="tm">Travel Mobil</option>
+			<option value="tb">Travel Bus</option>
+    </select>
+            </div>
+            <div class="button">
+                <button id="send" onclick="message()">SEND</button>
+            </div>
+            <div class="message">
+                <div class="success" id="success">Pesan Anda Telah Terkirim!!</div>
+                <div class="danger" id="danger">Kolom Tidak boleh Kosong!</div>
+            </div>
+        </div>
+        </div>
+</div>
+</div>
+<div class="info-container">
+<div class="info">
+  <h6>Use this spcae to provide users with more information about your offer. Consider it a follow-up to your headline and explain the benefits of your service or product</h6>
+</div>
+  <div class="feature">
+    <div class="flex-text">
+    <div class="circle">1</div>
+      <div class="profil2">
+        <p>Your first feature, written in the form of a benefit statemen</p>
+      </div>
+  </div>
+    <div class="flex-text">
+    <div class="circle">2</div>
+      <div class="profil2">
+        <p>Your second feature, written in the form of a benefit statemen</p>
+      </div>
+  </div>
+    <div class="flex-text">
+    <div class="circle">3</div>
+      <div class="profil2">
+        <p>Your third feature, written in the form of a benefit statemen</p>
+      </div>
+  </div>
+</div>
+</div>
+</div>
+<!-- --- HEADER GARIS  ---- -->
+<div class="border"></div>
+<header>
+  <h1>Message Us</h1>
+</header>
+<!-- --- HEADER GARIS ---- -->
+<div class="form-section">
+  <form name="message-form" id="message-form">
+    <label for="full-name">Nama :</label>
+    <input placeholder="Name" type="text" name="full-name" id="full-name">
+
+    <label for="birth-date">Tanggal Lahir :</label>
+    <input type="date" name="birth-date" id="birth-date">
+
+    <label for="gender">Jenis Kelamin :</label>
+    <div class="radio-buttons">
+      <input type="radio" name="gender" id="male" value="Pria">
+      <label for="male">Pria</label>
+      <input type="radio" name="gender" id="female" value="Wanita">
+      <label for="female">Wanita</label>
     </div>
-    <!-- ----------- -->
-    <footer>
-        <div class="ftr-text">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, incidunt?</p>
-            <p>Lorem ipsum dolor sit amet.</p>
-        </div>
-        <div class="social-media">
-            <a href="#" class="fa fa-facebook"></a>
-            <a href="#" class="fa fa-instagram"></a>
-            <a href="#" class="fa fa-linkedin"></a>
-        </div>
-        <div class="about" id="about">
-            <div class="contact">
-                <h2 class="title">Contact</h2>
-                <ul class="cnt">
-                    <li><a href="#">Whatsapp</a></li>
-                    <li><a href="#">E-Mail</a></li>
-                </ul>
-            </div>
-            <div class="report">
-                <h2 class="title">Report Problem</h2>
-                <ul class="cnt">
-                    <li><a href="#">Whatsapp</a></li>
-                    <li><a href="#">E-Mail</a></li>
-                </ul>
-            </div>
-        </div>
-        <div>
-            <div class="ftr-box">
-                <p>Copyright © 2023 . Rio Dwi Hermawan</p>
-            </div>
-        </div>
-    </footer>
-    <!-- ----------- -->
-    </main>
-  </body>
-  <script src="./js/slide.js"></script>
-  <script src="./js/popup.js"></script>
+
+    <label for="messages">Pesan :</label>
+    <textarea placeholder="Pesan" name="messages" id="messages"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+
+  <div class="form-output">
+    <p>Nama :<span id="sender-full-name"></span></p>
+    <p>Tanggal Lahir :<span id="sender-birth-date"></span></p>
+    <p>Jenis Kelamin :<span id="sender-gender"></span></p>
+    <p>Pesan :<span id="sender-message"></span></p>
+  </div>
+</div>
+<footer>
+  <p> @Copyright | Rio Dwi Hermawan |</p>
+</footer>
+<!-- ------- IMPORT JAVASCRIPT ------- -->
+    <script src="./js/main.js"></script>
+    <script src="./js/slide.js"></script>
+    <script src="./js/feedback.js"></script>
+<!-- ------- IMPORT JAVASCRIPT ------- -->
+</body>
 </html>
